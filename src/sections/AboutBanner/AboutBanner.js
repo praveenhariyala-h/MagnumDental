@@ -15,10 +15,10 @@ const AboutBanner = () => {
                             <div className="col-lg-5">
                                 <div className="about-banner-text">
                                     <h2>About Us</h2>
-                                    <p>We want you to feel amazing about your oral wellness. Not just twice a year, but every time you take a bite, tell a joke, laugh, or share a kiss.</p>
+                                    <p>At Magnum Dental Opus in Sheela Nagar, Visakhapatnam, we want you to feel confident about your oral health — every time you smile, eat, speak, or laugh.</p>
 
                                     <div className="theme-btn">
-                                        <Link to='/'>Contact Us</Link>
+                                        <Link to='/contact'>Contact Us</Link>
                                     </div>
                                 </div>
                             </div>

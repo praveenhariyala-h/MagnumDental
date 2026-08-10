@@ -6,7 +6,7 @@ const PageTitle = ({title,description}) => {
         <div className='page-title'>
             <div className="container">
                 <h2>News & Articles</h2>
-                <p>Stays updated with our latest blog and news and get healthy tips & trick for oral health</p>
+                <p>Stay updated with our latest dental tips, clinic news, and oral health advice from Magnum Dental Opus.</p>
             </div>
         </div> 
     );

@@ -14,8 +14,8 @@ const Gallery = () => {
             <div className="container">
                 <SectionTitle 
                     subTitle="Gallery"
-                    title="Some proof about our services for you"
-                    description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+                    title="A look at our dental care in action"
+                    description="Explore moments from Magnum Dental Opus — modern treatment spaces, skilled care, and smiles we help restore every day."
                 />
                 <div className="row">
                     <div className="col-md-5 col-sm-6">

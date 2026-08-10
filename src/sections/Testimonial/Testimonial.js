@@ -13,26 +13,26 @@ const Testimonial = () => {
     const testimonails = [
         {
             'img': imgOne,
-            'name': 'Robert Fox',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Priya Sharma',
+            'description' : 'The team at Magnum Dental Opus made my braces journey comfortable and easy. My smile has never looked better.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
             'img': imgTwo,
-            'name': 'Albert Flores',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Ravi Kumar',
+            'description' : 'I came in with severe tooth pain and got quick emergency care. Professional, gentle, and truly patient-focused.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
             'img': imgThree,
-            'name': 'Bessie Cooper',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Ananya Reddy',
+            'description' : 'From consultation to smile designing, everything was explained clearly. Highly recommend Magnum Dental Opus.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
             'img': imgOne,
-            'name': 'Bessie Cooper',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Suresh Naidu',
+            'description' : 'Clean clinic, friendly staff, and excellent implant treatment. Best dental experience in Sheela Nagar.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         }
     ]
@@ -80,13 +80,13 @@ const Testimonial = () => {
                         />
                     </div>
                     <div className="col-lg-6">
-                        <p className="pt-5">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+                        <p className="pt-5">Real experiences from patients who trust Magnum Dental Opus for comfortable, high-quality dental care in Visakhapatnam.</p>
                     </div>
                 </div>
 
                 <Slider {...settings} className="testimoni-slider">
                     {
-                        testimonails.map(testimonail => <TestimoniCard testimonail={testimonail} />)
+                        testimonails.map(testimonail => <TestimoniCard key={testimonail.name} testimonail={testimonail} />)
                     }
                 </Slider>
                

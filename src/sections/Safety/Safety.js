@@ -8,8 +8,8 @@ const Safety = () => {
             <div className="container">
                 <SectionTitle 
                     subTitle="Safety"
-                    title="We put the safety first"
-                    description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+                    title="We put safety first"
+                    description="Your health comes first. We maintain rigorous sterilization, infection-control, and clinic hygiene standards at Magnum Dental Opus."
                 />
 
                 <div className="safety-video ratio ratio-16x9">

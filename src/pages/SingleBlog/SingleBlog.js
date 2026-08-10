@@ -5,11 +5,43 @@ import { Link, useParams } from 'react-router-dom';
 import BlogData from '../../sections/Blogs/BlogData';
 import Footer from '../../sections/Footer/Footer';
 
+const blogBodies = {
+    'new-technology-make-for-dental-operation': {
+        paragraphs: [
+            'Modern dentistry has changed how clinics diagnose and treat oral health concerns. At Magnum Dental Opus, advanced tools help us plan treatments with greater accuracy while keeping patient comfort at the center of care.',
+            'Digital imaging, precise instruments, and updated clinical techniques allow us to detect issues earlier, explain options more clearly, and complete procedures with less discomfort and shorter recovery time.',
+        ],
+        quote: 'Technology works best when it supports careful diagnosis and a personal, patient-first approach.',
+        closing: 'Whether you need a routine checkup, restorative care, or a smile makeover, modern dental technology helps us deliver safer and more predictable results for families in Sheela Nagar, Visakhapatnam.',
+    },
+    'regular-dental-care-make-your-smile-brighter': {
+        paragraphs: [
+            'Regular dental visits are one of the simplest ways to protect your smile. Cleanings and checkups help remove plaque, catch cavities early, and keep gums healthy before small issues become painful problems.',
+            'At Magnum Dental Opus, we recommend consistent oral care at home along with professional reviews so you can maintain brighter teeth, fresher breath, and lasting confidence.',
+        ],
+        quote: 'Prevention is always kinder to your smile — and usually kinder to your budget — than waiting for pain to appear.',
+        closing: 'Book a checkup today and take a small step that makes a big difference for your long-term oral health.',
+    },
+    'dental-hygiene-for-all-age-to-make-smile': {
+        paragraphs: [
+            'Good dental hygiene looks different at every stage of life. Children need gentle guidance, adults benefit from consistent cleaning habits, and seniors often need extra support for gums, dentures, or implant care.',
+            'Brushing twice a day, cleaning between teeth, limiting sugary snacks, and visiting the dentist regularly remain the foundation of a healthy smile for every age group.',
+        ],
+        quote: 'Healthy habits started early — and maintained consistently — protect smiles for life.',
+        closing: 'Our team at Magnum Dental Opus is here to guide your family with practical hygiene advice and personalized dental care.',
+    },
+};
+
 const SingleBlog = () => {
 
     const {url} = useParams();
     const blog = BlogData.find(blog => blog.url === url);
-    const {title, img} = blog;
+    const {title, img, category, description} = blog;
+    const body = blogBodies[url] || {
+        paragraphs: [description],
+        quote: 'Magnum Dental Opus is here to keep your smile healthy and confident.',
+        closing: 'Visit our clinic in Sheela Nagar, Visakhapatnam, or contact us to learn more.',
+    };
 
     return (
         <>
@@ -20,23 +52,19 @@ const SingleBlog = () => {
                         <div className="col-lg-9">
                                 <main className="single-blog-area">
                                 <p className="single-blog-category">
-                                    TECHNOLOGY
+                                    {category}
                                 </p>
                                 <h2 className="single-blog-title">{title}</h2>
                                 <img className='single-blog-banner' src={img} alt="blog banner"/>
-                                <p className="single-blog-text">The paper discusses the use of epoxy resins in construction and repair of offshore concrete structures. Typical properties of resin systems are described, and the range of conditions encountered in practice and the development of a wide range of epoxy systems for a variety of applications are discussed. Several applications such as surface and underwater repairs, and the use of epoxy resins as curing membranes, and to seal cracks and joints are described in detail. It is shown that careful selection of materials and good quality of workmanship are essential to derive the maximum benefit from the use of epoxy systems. A wide range of properties could be obtained from epoxies to suit the requirements of the designer and the contractor.
+                                {
+                                    body.paragraphs.map((paragraph, index) => (
+                                        <p className="single-blog-text" key={index}>{paragraph}</p>
+                                    ))
+                                }
 
-                                To this day, it’s not entirely clear which seven lines the article referenced. The prevailing theory is that it’s the roughly seven lines of curl it took to create a Charge. However, a search for the seven lines of code ultimately misses the point: the ability to open up a terminal, run this curl snippet, then immediately see a successful credit card payment felt like seven lines of code. It’s unlikely that a developer believed a production-ready payments integration involved literally only seven lines of code. But taking something as complex as credit card processing and reducing.</p>
+                                <blockquote className='single-post-quote'>“ {body.quote} ”</blockquote>
 
-                                <p className='single-blog-text'>A few years ago, Bloomberg Businessweek published a feature story on Stripe. Four words spanned the center of the cover: “seven lines of code,” suggesting that’s all it took for a business to power payments on Stripe. The assertion was bold—and became a theme and meme for us.
-
-                                To this day, it’s not entirely clear which seven lines the article referenced. The prevailing theory is that it’s the roughly seven lines of curl it took to create a Charge. However, a search for the seven lines of code ultimately misses the point: the ability to open up a terminal, run this curl snippet, then immediately see a successful credit card payment felt like seven lines of code. It’s unlikely that a developer believed a production-ready payments integration involved literally only seven lines of code. But taking something as complex as credit card processing and reducing the integration to only a few lines of code that, when run, immediately returns a successful Charge object is really quite magical</p>
-
-                                <blockquote className='single-post-quote'>“ Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor ”</blockquote>
-
-                                <p className="single-blog-text">The paper discusses the use of epoxy resins in construction and repair of offshore concrete structures. Typical properties of resin systems are described, and the range of conditions encountered in practice and the development of a wide range of epoxy systems for a variety of applications are discussed. Several applications such as surface and underwater repairs, and the use of epoxy resins as curing membranes, and to seal cracks and joints are described in detail. It is shown that careful selection of materials and good quality of workmanship are essential to derive the maximum benefit from the use of epoxy systems. A wide range of properties could be obtained from epoxies to suit the requirements of the designer and the contractor.
-
-                                To this day, it’s not entirely clear which seven lines the article referenced. The prevailing theory is that it’s the roughly seven lines of curl it took to create a Charge. However, a search for the seven lines of code ultimately misses the point: the ability to open up a terminal, run this curl snippet, then immediately see a successful credit card payment felt like seven lines of code. It’s unlikely that a developer believed a production-ready payments integration involved literally only seven lines of code. But taking something as complex as credit card processing and reducing.</p>
+                                <p className="single-blog-text">{body.closing}</p>
                             </main>
                         </div>
                         <div className="col-lg-3">
@@ -54,11 +82,11 @@ const SingleBlog = () => {
                                 <div className="sidebar-category mb-3">
                                     <h3 className="sidebar-heading">Categories</h3>
                                     <ul>
-                                        <li><Link href="/">Technology</Link></li>
-                                        <li><Link href="/">Root Canal</Link></li>
-                                        <li><Link href="/">Teeth</Link></li>
-                                        <li><Link href="/">Whitening</Link></li>
-                                        <li><Link href="/">Dentures</Link></li>
+                                        <li><Link to="/blogs">Technology</Link></li>
+                                        <li><Link to="/blogs">Dental Care</Link></li>
+                                        <li><Link to="/blogs">Hygiene</Link></li>
+                                        <li><Link to="/singleservice">Treatments</Link></li>
+                                        <li><Link to="/contact">Appointments</Link></li>
                                     </ul>
                                 </div>
                             </div>

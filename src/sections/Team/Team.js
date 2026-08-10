@@ -11,19 +11,19 @@ const Team = () => {
     const teams = [
         {
             'img': imgOne,
-            'name': 'Dianne Russell'
+            'name': 'Dr. Thanmai'
         },
         {
             'img': imgTwo,
-            'name': 'Esther Howard'
+            'name': 'Dental Specialist'
         },
         {
             'img': imgThree,
-            'name': 'Darrell Steward'
+            'name': 'Clinical Assistant'
         },
         {
             'img': imgFour,
-            'name': 'Jenny Wilson'
+            'name': 'Patient Care Team'
         }
     ]
 
@@ -35,23 +35,22 @@ const Team = () => {
                     <div className="col-lg-7">
                         <SectionTitle 
                             subTitle="Meet our Team"
-                            title="Get to know the dentalist
-                            dental Team"
+                            title="Get to know the Magnum Dental Opus team"
                         />
                     </div>
 
                     <div className="col-lg-5">
-                        <p className='pt-5'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                        <p className='pt-5'>Our caring clinicians and support staff work together to deliver gentle, precise dental care for every patient who walks through our doors.</p>
                     </div>
                 </div>
 
                 <div className="row">
                     {
                         teams.map (team => 
-                            <div className="col-lg-3 col-sm-6">
+                            <div className="col-lg-3 col-sm-6" key={team.name}>
                                 <div className="team-card">
                                     <div className="team-img">
-                                        <img src={team.img} alt="" />
+                                        <img src={team.img} alt={team.name} />
                                     </div>
                                     <h3>{team.name}</h3>
                                 </div>

@@ -5,30 +5,25 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp, FaPhoneAlt } from "rea
 import { Link } from 'react-router-dom';
 import call from '../../assets/footer/calling.png';
 import time from '../../assets/footer/time.png';
-import location from '../../assets/footer/location.png';
 
 const Footer = () => {
 
     const footerMenu = [
         {
             'name' : 'About Us',
-            'link' : '/'
+            'link' : '/about'
         },
         {
             'name' : 'Dental Services',
-            'link' : '/'
-        },
-        {
-            'name' : 'Dentist',
-            'link' : '/'
+            'link' : '/singleservice'
         },
         {
             'name' : 'Blogs',
-            'link' : '/'
+            'link' : '/blogs'
         },
         {
-            'name' : 'FAQs',
-            'link' : '/'
+            'name' : 'Contact Us',
+            'link' : '/contact'
         }
     ];
 
@@ -37,9 +32,9 @@ const Footer = () => {
             'title': 'Phone Number',
             'info': (
                 <>
-                    <a href="https://wa.me/917976615937" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919100291726" target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp className="contact-icon whatsapp" />
-                        7976615937
+                        9100291726
                     </a>
                     <a href="tel:9100291726">
                         <FaPhoneAlt className="contact-icon call" />
@@ -50,14 +45,9 @@ const Footer = () => {
             'icon': call
         },
         {
-            'title': 'Open Hour',
-            'info': '09:00 AM - 18:00 PM',
+            'title': 'Open Hours',
+            'info': '09:00 AM - 06:00 PM',
             'icon': time
-        },
-        {
-            'title': 'Clinic Address',
-            'info': 'Magnum Dental Opus, first floor, Sri Sai villa complex, right side of ayyappa swamy temple, towards STBL cinema theatre facing, NH-16, Sheela Nagar, Visakhapatnam, Gopalapatnam (rural), Andhra Pradesh 530012',
-            'icon': location
         }
     ]
 
@@ -69,7 +59,7 @@ const Footer = () => {
                         <div className="footer-logo">
                             <img src={logo} alt="logo" />
                         </div>
-                        <p>Dental Care Seattle is a top-rated local practice for cosmetic, preventative, and restorative dentistry on First Hill</p>
+                        <p>Magnum Dental Opus is a trusted dental clinic in Sheela Nagar, Visakhapatnam, offering cosmetic, preventive, and restorative care for the whole family.</p>
 
                         <div className="social-logo">
                             <p>Follow us on</p>
@@ -85,7 +75,7 @@ const Footer = () => {
                             <p>Quick Links</p>
                             <ul>
                                 {
-                                    footerMenu.map(singleMenu => <li><Link to="/">{singleMenu.name}</Link></li>)
+                                    footerMenu.map(singleMenu => <li key={singleMenu.name}><Link to={singleMenu.link}>{singleMenu.name}</Link></li>)
                                 }
                             </ul>
                         </div>
@@ -113,7 +103,7 @@ const Footer = () => {
 
                 <div className="copyright-area">
                     <div className='copy-text'>
-                        <p>&copy; Dentalist. All Right Reserved</p>
+                        <p>&copy; Magnum Dental Opus. All Rights Reserved</p>
                     </div>  
                     <div className='copy-links'>
                         <ul>

@@ -7,22 +7,22 @@ const featuresData = [
     {
         'icon': iconOne,
         'title': 'Safety first',
-        'description': 'We prioritize safety with health checks and more'
+        'description': 'We follow strict hygiene and sterilization protocols for every procedure.'
     },
     {
         'icon': iconTwo,
-        'title': 'Insurance accepted',
-        'description': 'We’re in network with major insurers like Delta Dental, Aetna, and Cigna.'
+        'title': 'Insurance support',
+        'description': 'We help you understand coverage options and make treatment plans clear and affordable.'
     },
     {
         'icon': iconThree,
         'title': 'Full-service dentistry',
-        'description': 'Our clinic offer a full  of dental service, from exams to implants and veneers.'
+        'description': 'From routine checkups to implants, braces, and smile designing — all under one roof.'
     },
     {
         'icon': iconFour,
         'title': 'No judgment ever',
-        'description': 'From floss bosses to sweet tooths, every mouth is welcome.'
+        'description': 'Whether you need a simple cleaning or complete smile makeover, every patient is welcome.'
     }
 ]
 
