@@ -16,6 +16,26 @@
             height: 100%;
         }
 
+        .map-scanner {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            z-index: 2;
+            background: $color-white;
+            padding: 8px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgb(0 0 0 / 18%);
+            line-height: 0;
+
+            img {
+                width: 110px;
+                height: 110px;
+                aspect-ratio: 1 / 1;
+                object-fit: contain;
+                display: block;
+            }
+        }
+
         .location-name {
             position: absolute;
             bottom: 20px;
@@ -28,6 +48,7 @@
             display: flex;
             align-items: center;
             border-radius: 30px;
+            z-index: 2;
 
             svg {
                 background: $color-blue;
@@ -120,6 +141,19 @@
 // Mobile Responsive
 @media (max-width: 575px){
     .appointment-section {
+        .google-map {
+            .map-scanner {
+                top: 12px;
+                right: 12px;
+                padding: 6px;
+
+                img {
+                    width: 84px;
+                    height: 84px;
+                }
+            }
+        }
+
         .appointment-form-area {
             padding-left: 0;
 

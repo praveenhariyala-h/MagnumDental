@@ -10,6 +10,8 @@ import Slider from "react-slick";
 
 const Testimonial = () => {
 
+    const googleReviewsLink = 'https://www.google.com/maps/place/Magnum+Dental+Opus/@17.7189905,83.1997423,896m/data=!3m1!1e3!4m8!3m7!1s0x3a3969004663143d:0xca10e0fb7f5a6f9a!8m2!3d17.720091!4d83.203401!9m1!1b1!16s%2Fg%2F11ltfxm_cz?entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D';
+
     const testimonails = [
         {
             'img': imgOne,
@@ -81,6 +83,11 @@ const Testimonial = () => {
                     </div>
                     <div className="col-lg-6">
                         <p className="pt-5">Real experiences from patients who trust Magnum Dental Opus for comfortable, high-quality dental care in Visakhapatnam.</p>
+                        <div className="theme-btn mt-3">
+                            <a href={googleReviewsLink} target="_blank" rel="noopener noreferrer">
+                                View Google Reviews
+                            </a>
+                        </div>
                     </div>
                 </div>
 

@@ -3,6 +3,7 @@ import './Appointment.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import {AiFillHome} from "react-icons/ai";
 import ContactForm from '../../components/ContactForm/ContactForm';
+import mapScanner from '../../assets/map-scanner.png';
 
 const Appointment = () => {
 
@@ -15,6 +16,10 @@ const Appointment = () => {
                     <div className="col-lg-5 col-md-6">
                         <div className="google-map">
                             <iframe title='map' src={mapLink}></iframe>
+
+                            <div className="map-scanner">
+                                <img src={mapScanner} alt="Scan for directions to Magnum Dental Opus" />
+                            </div>
 
                             <div className="location-name">
                                 <AiFillHome />
