@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ThemeIcon from '../ThemeIcon/ThemeIcon';
+import '../ThemeIcon/ThemeIcon.scss';
 import './Service.scss';
 
 const Service = ({serviceList}) => {
-    const {title,description, icon} = serviceList;
+    const {title, description, icon: Icon} = serviceList;
  
     return (
-        <div className='col-lg-3 col-md-4 col-sm-6'>
+        <div className='single-service'>
            <div className="service-box">
                 <div className="service-icon">
                     <div className='icon-area'>
-                    <ThemeIcon icon={icon} />
+                        <div className='icon-box'>
+                            <Icon />
+                        </div>
                     </div>
                 </div>
                 <div className="service-text">

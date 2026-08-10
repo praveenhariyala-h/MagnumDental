@@ -1,11 +1,72 @@
 @import '../../sass/colors.scss';
 
 .service-section {
+    overflow: hidden;
+
     .service-title-text {
         padding-top: 50px;
         max-width: 600px;
         margin: 0 0 0 auto;
         font-weight: 500;
+    }
+
+    .services-slider {
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        .slick-list {
+            margin: 0 -12px;
+        }
+
+        .slick-slide {
+            padding: 0 12px;
+        }
+
+        .slick-arrow {
+            width: 44px;
+            height: 44px;
+            z-index: 2;
+            border-radius: 50%;
+            background: $color-blue;
+            transition: opacity 0.3s ease;
+
+            &::before {
+                font-size: 22px;
+                opacity: 1;
+                line-height: 1;
+            }
+
+            &:hover {
+                background: $color-black;
+            }
+        }
+
+        .slick-prev {
+            left: -10px;
+        }
+
+        .slick-next {
+            right: -10px;
+        }
+
+        .slick-dots {
+            bottom: -35px;
+
+            li {
+                margin: 0 4px;
+
+                button::before {
+                    font-size: 10px;
+                    color: $color-blue;
+                    opacity: 0.35;
+                }
+
+                &.slick-active button::before {
+                    opacity: 1;
+                    color: $color-blue;
+                }
+            }
+        }
     }
 
     .services-link {

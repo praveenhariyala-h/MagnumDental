@@ -21,8 +21,8 @@ const Banner = () => {
                         <div className="row">
                             <div className="col-lg-7">
                                 <div className="banner-text" data-aos="fade-up" data-aos-duration="2000">
-                                    <h1>MAGNUM DENTAL OPUS <br></br> Sheelanagar, Visakhapatnam 530012</h1>
-                                    <p>Exceptional care for all ages creating bueatifull smile</p>
+                                    <h1>MAGNUM DENTAL OPUS <br></br> Sheela Nagar, Visakhapatnam 530012</h1>
+                                    <p>Exceptional dental care for all ages, creating beautiful, confident smiles.</p>
 
                                     <div className="banner-bottom">
                                         <div className="theme-btn">
@@ -36,9 +36,9 @@ const Banner = () => {
                                             <div className='call-text'>
                                                 <p>Dental 24H Emergency</p>
                                                 <h6>
-                                                    <a href="https://wa.me/917976615937" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://wa.me/919100291726" target="_blank" rel="noopener noreferrer">
                                                         <FaWhatsapp className="contact-icon whatsapp" />
-                                                        7976615937
+                                                        9100291726
                                                     </a>
                                                 </h6>
                                                 <h6>

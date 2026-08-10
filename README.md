@@ -11,7 +11,7 @@ Responsive React website for **Magnum Dental Opus**, a dental clinic in Sheela N
 | **Phone** | 9100291726 |
 | **WhatsApp** | 7976615937 |
 | **Hours** | 09:00 AM – 06:00 PM |
-| **Email (bookings)** | kumarhariyal02@gmail.com |
+| **Email (bookings)** | magnumdentalopus@gmail.com |
 
 ## Tech Stack
 
@@ -31,7 +31,7 @@ Responsive React website for **Magnum Dental Opus**, a dental clinic in Sheela N
 - Direct call and WhatsApp links across banner, appointment, and footer
 - Appointment booking form with:
   - Name, email, phone, service, and message fields
-  - Email delivery to `kumarhariyal02@gmail.com` via [FormSubmit](https://formsubmit.co/)
+  - Email delivery to `magnumdentalopus@gmail.com` via [FormSubmit](https://formsubmit.co/)
   - WhatsApp message prefills for clinic number `7976615937`
 - Service options: Dentures, Implants, Whitening, Root Canal
 - Smooth AOS animations
@@ -66,7 +66,7 @@ Creates a production build in the `build` folder.
 
 The booking form lives in `src/components/ContactForm/ContactForm.js`.
 
-1. **Email** — Submissions are posted to FormSubmit for `kumarhariyal02@gmail.com`.
+1. **Email** — Submissions are posted to FormSubmit for `magnumdentalopus@gmail.com`.
    - On the **first** submission, FormSubmit sends a confirmation email to that inbox.
    - Open the email and click **Activate Form** once.
    - Later bookings are delivered automatically.

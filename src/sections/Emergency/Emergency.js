@@ -16,10 +16,10 @@ const Emergency = () => {
                     </div>
                     <div className="col-lg-6 col-md-6">
                         <div className="emergency-text">
-                            <SectionTitle subTitle="Dental 24H Emergency" title="Gentle, friendly treatment from our locally practice." description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."/>
+                            <SectionTitle subTitle="Dental 24H Emergency" title="Gentle, friendly care when you need it most." description="From sudden tooth pain to dental injuries, Magnum Dental Opus is ready to help with prompt emergency care in Sheela Nagar, Visakhapatnam."/>
 
                             <div className="theme-btn">
-                                <Link to='/'>Book an appointment</Link>
+                                <Link to='/contact'>Book an appointment</Link>
                             </div>
                         </div>
                     </div>

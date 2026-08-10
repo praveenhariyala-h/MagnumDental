@@ -3,14 +3,15 @@ import './ContactForm.scss';
 import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
 import icon from '../../assets/banner/icons/Calling.png';
 
-const CLINIC_EMAIL = 'kumarhariyal02@gmail.com';
-const CLINIC_WHATSAPP = '917976615937';
+const CLINIC_EMAIL = 'magnumdentalopus@gmail.com';
+const CLINIC_WHATSAPP = '919100291726';
+const CLINIC_PHONE = '9100291726';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        service: 'Dentures',
+        service: 'Orthodontic Braces',
         phone: '',
         message: '',
     });
@@ -73,7 +74,7 @@ const ContactForm = () => {
             setFormData({
                 name: '',
                 email: '',
-                service: 'Dentures',
+                service: 'Orthodontic Braces',
                 phone: '',
                 message: '',
             });
@@ -132,10 +133,17 @@ const ContactForm = () => {
                             onChange={handleChange}
                             required
                         >
-                            <option value="Dentures">Dentures</option>
+                            <option value="Orthodontic Braces">Orthodontic Braces</option>
+                            <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                            <option value="Wisdom Teeth">Wisdom Teeth</option>
+                            <option value="Restorative">Restorative</option>
+                            <option value="Invisible Aligners">Invisible Aligners</option>
+                            <option value="Pediatric Dentistry">Pediatric Dentistry</option>
                             <option value="Implants">Implants</option>
-                            <option value="Whitening">Whitening</option>
                             <option value="Root Canal">Root Canal</option>
+                            <option value="Crowns & Bridges">Crowns & Bridges</option>
+                            <option value="Flap Surgery">Flap Surgery</option>
+                            <option value="Smile Designing">Smile Designing</option>
                         </select>
                     </div>
                 </div>
@@ -156,7 +164,7 @@ const ContactForm = () => {
                 </div>
                 <div className="col-lg-12">
                     <div className="form-group">
-                        <label htmlFor="appointment-message">Messages</label>
+                        <label htmlFor="appointment-message">Message</label>
                         <textarea
                             id="appointment-message"
                             name="message"
@@ -188,15 +196,15 @@ const ContactForm = () => {
                         <div className="call-text">
                             <p>Dental 24H Emergency</p>
                             <h6>
-                                <a href="https://wa.me/917976615937" target="_blank" rel="noopener noreferrer">
+                                <a href={`https://wa.me/${CLINIC_WHATSAPP}`} target="_blank" rel="noopener noreferrer">
                                     <FaWhatsapp className="contact-icon whatsapp" />
-                                    7976615937
+                                    {CLINIC_PHONE}
                                 </a>
                             </h6>
                             <h6>
-                                <a href="tel:9100291726">
+                                <a href={`tel:${CLINIC_PHONE}`}>
                                     <FaPhoneAlt className="contact-icon call" />
-                                    9100291726
+                                    {CLINIC_PHONE}
                                 </a>
                             </h6>
                         </div>

@@ -1,0 +1,88 @@
+.sticky-contact {
+    .sticky-contact__btn {
+        position: fixed;
+        bottom: 28px;
+        z-index: 999;
+        height: 56px;
+        border-radius: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 0 8px 24px rgba(24, 25, 69, 0.22);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        svg {
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(24, 25, 69, 0.28);
+            color: #fff;
+        }
+
+        &--call {
+            left: 22px;
+            background: #583fbc;
+            padding: 0 18px 0 16px;
+            min-width: auto;
+            width: auto;
+
+            .sticky-contact__number {
+                font-size: 15px;
+                font-weight: 700;
+                letter-spacing: 0.3px;
+                white-space: nowrap;
+            }
+        }
+
+        &--whatsapp {
+            right: 22px;
+            width: 56px;
+            background: #25d366;
+            border-radius: 50%;
+            padding: 0;
+
+            svg {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .sticky-contact {
+        .sticky-contact__btn {
+            height: 46px;
+            bottom: 18px;
+
+            &--call {
+                left: 10px;
+                padding: 0 12px 0 12px;
+                gap: 8px;
+
+                svg {
+                    font-size: 16px;
+                }
+
+                .sticky-contact__number {
+                    font-size: 13px;
+                }
+            }
+
+            &--whatsapp {
+                right: 14px;
+                width: 50px;
+                height: 50px;
+
+                svg {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

@@ -26,8 +26,8 @@ const Appointment = () => {
                         <div className="appointment-form-area">
                             <SectionTitle 
                             subTitle="BOOK APPOINTMENT"
-                            title="Care at Dentalist is pleasure"
-                            description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual"/>
+                            title="Care at Magnum Dental Opus is a pleasure"
+                            description="Book your visit online and our team will confirm your preferred time. We’re here for checkups, treatments, and smile makeovers."/>
 
                             <ContactForm />
                         </div>

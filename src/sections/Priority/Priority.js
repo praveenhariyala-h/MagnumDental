@@ -18,12 +18,12 @@ const Priority = () => {
                         <div className="priority-text">
                             <SectionTitle 
                                 subTitle="OUR PRIORITY" 
-                                title="Our clients are our priority"
-                                description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+                                title="Our patients are our priority"
+                                description="We take time to listen, explain every step, and create treatment plans that fit your needs, comfort, and budget."
                             />
 
                             <div className="theme-btn">
-                                <Link to='/'>Book an appointment</Link>
+                                <Link to='/contact'>Book an appointment</Link>
                             </div>
                         </div>
                     </div>
