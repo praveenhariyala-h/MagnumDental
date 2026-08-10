@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
 import icon from '../../assets/banner/icons/Calling.png';
 import bannerImg from '../../assets/banner/1.png';
-import doctorImg from '../../assets/banner/thanmai_11zon.jpg';
+import doctorImg from '../../assets/banner/thanmai.jpg';
 import bannerPattern from '../../assets/banner/pattern_02.png';
 import shapeOne from '../../assets/banner/vector_01.png';
 import shapeTwo from '../../assets/banner/vector_02.png';
@@ -22,7 +22,7 @@ const Banner = () => {
                             <div className="col-lg-7">
                                 <div className="banner-text" data-aos="fade-up" data-aos-duration="2000">
                                     <h1>MAGNUM DENTAL OPUS <br></br> Sheela Nagar, Visakhapatnam 530012</h1>
-                                    <p>Exceptional dental care for all ages, creating beautiful, confident smiles.</p>
+                                    <p>Exceptional dental care for all ages, creating beautiful and confident smiles.</p>
 
                                     <div className="banner-bottom">
                                         <div className="theme-btn">
@@ -56,7 +56,7 @@ const Banner = () => {
                             <div className="col-lg-5">
                                 <div className="banner-img-area" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                                     <div className="banner-img">
-                                        <img src={bannerImg} alt="banner model" />
+                                        <img src={bannerImg} alt="Dr. Thanmai" />
                                     </div>
                                     <div className='info-box'>
                                         <div className="info-img">
@@ -64,7 +64,14 @@ const Banner = () => {
                                         </div>
                                         <div className='info-text'>
                                             <p>Dr. Thanmai</p>
-                                            <p><small>Consultant</small></p>
+                                            <p className="info-credentials">
+                                                <small>
+                                                    B.D.S<br />
+                                                    IMPLANTOLOGIST<br />
+                                                    &amp;<br />
+                                                    COSMETIC DENTAL SURGEON (Consultant)
+                                                </small>
+                                            </p>
                                         </div>
                                     </div>  
 
