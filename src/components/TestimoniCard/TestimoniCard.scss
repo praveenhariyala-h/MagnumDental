@@ -19,8 +19,14 @@
         left: 0;
         right: 0;
         margin: auto;
+        display: flex;
+        justify-content: center;
 
-        img {
+        .testimonial-avatar {
+            width: 90px;
+            height: 90px;
+            color: #7BA8C9;
+            background: $color-white;
             border: 8px solid #D9EBFA;
             border-radius: 50%;
             display: inline-block;
