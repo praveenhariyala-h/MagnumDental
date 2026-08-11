@@ -1,9 +1,6 @@
 import React from 'react';
 import './Testimonial.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import imgOne from '../../assets/testimonial/1.png';
-import imgTwo from '../../assets/testimonial/2.png';
-import imgThree from '../../assets/testimonial/3.png';
 import TestimoniCard from '../../components/TestimoniCard/TestimoniCard';
 import { AiFillStar } from "react-icons/ai";
 import Slider from "react-slick";
@@ -14,25 +11,21 @@ const Testimonial = () => {
 
     const testimonails = [
         {
-            'img': imgOne,
             'name': 'Priya Sharma',
             'description' : 'The team at Magnum Dental Opus made my braces journey comfortable and easy. My smile has never looked better.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
-            'img': imgTwo,
             'name': 'Ravi Kumar',
             'description' : 'I came in with severe tooth pain and got quick emergency care. Professional, gentle, and truly patient-focused.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
-            'img': imgThree,
             'name': 'Ananya Reddy',
             'description' : 'From consultation to smile designing, everything was explained clearly. Highly recommend Magnum Dental Opus.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
-            'img': imgOne,
             'name': 'Suresh Naidu',
             'description' : 'Clean clinic, friendly staff, and excellent implant treatment. Best dental experience in Sheela Nagar.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
