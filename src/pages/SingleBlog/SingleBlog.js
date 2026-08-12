@@ -55,7 +55,7 @@ const SingleBlog = () => {
                                     {category}
                                 </p>
                                 <h2 className="single-blog-title">{title}</h2>
-                                <img className='single-blog-banner' src={img} alt="blog banner"/>
+                                <img className='single-blog-banner' src={img} alt="blog banner" loading="eager" decoding="async"/>
                                 {
                                     body.paragraphs.map((paragraph, index) => (
                                         <p className="single-blog-text" key={index}>{paragraph}</p>

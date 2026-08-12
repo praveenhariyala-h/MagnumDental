@@ -41,7 +41,7 @@ const Services = () => {
     };
 
     return (
-        <section className='service-section pt-100 pb-70' data-aos="fade-up" data-aos-duration="2000">
+        <section className='service-section pt-100 pb-70' data-aos="fade-up" data-aos-duration="800">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-sm-6">

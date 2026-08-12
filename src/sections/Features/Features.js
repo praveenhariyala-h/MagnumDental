@@ -6,7 +6,7 @@ import featuresData from './FeaturesData';
 
 const Features = () => {
     return (
-        <section className='section-bg section-common features-section pt-100 pb-70' data-aos="fade-up" data-aos-duration="2000">
+        <section className='section-bg section-common features-section pt-100 pb-70' data-aos="fade-up" data-aos-duration="800">
             <div className="container">
                 <SectionTitle subTitle="Features" title="Specialized care built on experience" description="At Magnum Dental Opus, every visit is planned around your comfort, safety, and long-term oral health."/>
 

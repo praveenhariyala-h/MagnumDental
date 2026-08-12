@@ -31,7 +31,7 @@ const Faq = () => {
     ];
 
     return (
-        <section className='faq-section pt-100 pb-70'  data-aos="fade-up" data-aos-duration="2000">
+        <section className='faq-section pt-100 pb-70'  data-aos="fade-up" data-aos-duration="800">
             <div className="container">
                 <SectionTitle
                     subTitle="FAQ"

@@ -9,7 +9,7 @@ const BlogCard = ({blog}) => {
         <div className='col-lg-4 col-md-6 col-sm-6'>
             <div className="blog-card">
                 <div className="blog-img">
-                    <img src={img} alt="blog"/>
+                    <img src={img} alt="blog" loading="lazy" decoding="async" />
                     <div className="date">
                         <h6>23</h6>
                         <p>Jan</p>
