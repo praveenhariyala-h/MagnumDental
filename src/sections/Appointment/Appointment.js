@@ -10,15 +10,15 @@ const Appointment = () => {
     const mapLink = 'https://www.google.com/maps?q=Magnum+Dental+Opus/@17.720091,83.203401&z=16&output=embed'
 
     return (
-        <section className='appointment-section pb-70' data-aos="fade-up" data-aos-duration="2000">
+        <section className='appointment-section pb-70' data-aos="fade-up" data-aos-duration="800">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-5 col-md-6">
                         <div className="google-map">
-                            <iframe title='map' src={mapLink}></iframe>
+                            <iframe title='map' src={mapLink} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
                             <div className="map-scanner">
-                                <img src={mapScanner} alt="Scan for directions to Magnum Dental Opus" />
+                                <img src={mapScanner} alt="Scan for directions to Magnum Dental Opus" loading="lazy" decoding="async" />
                             </div>
 
                             <div className="location-name">

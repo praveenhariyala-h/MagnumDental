@@ -2,11 +2,11 @@ import React from 'react';
 import './Expert.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import { BsFillCheckCircleFill } from "react-icons/bs";
-import expertImg from '../../assets/expert.png';
+import expertImg from '../../assets/expert.webp';
 
 const Expert = () => {
     return (
-        <section className='expert-section' data-aos="fade-up" data-aos-duration="2000">
+        <section className='expert-section' data-aos="fade-up" data-aos-duration="800">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-6">
@@ -35,7 +35,7 @@ const Expert = () => {
                     </div>
                     <div className="col-lg-6 col-md-6">
                         <div className="expert-img">
-                            <img src={expertImg} alt="expert" />
+                            <img src={expertImg} alt="expert" loading="lazy" decoding="async" />
                         </div>
                     </div>
                 </div>

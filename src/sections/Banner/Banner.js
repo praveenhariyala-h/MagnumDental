@@ -3,7 +3,7 @@ import './Banner.scss';
 import {Link} from 'react-router-dom';
 import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
 import icon from '../../assets/banner/icons/Calling.png';
-import bannerImg from '../../assets/banner/1.png';
+import bannerImg from '../../assets/banner/1.webp';
 import doctorImg from '../../assets/banner/thanmai.jpg';
 import bannerPattern from '../../assets/banner/pattern_02.png';
 import shapeOne from '../../assets/banner/vector_01.png';
@@ -20,7 +20,7 @@ const Banner = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-7">
-                                <div className="banner-text" data-aos="fade-up" data-aos-duration="2000">
+                                <div className="banner-text" data-aos="fade-up" data-aos-duration="800">
                                     <h1>MAGNUM DENTAL OPUS <br></br> Sheela Nagar, Visakhapatnam 530012</h1>
                                     <p>Exceptional dental care for all ages, creating beautiful and confident smiles.</p>
 
@@ -54,13 +54,20 @@ const Banner = () => {
                             </div>
 
                             <div className="col-lg-5">
-                                <div className="banner-img-area" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                                <div className="banner-img-area" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
                                     <div className="banner-img">
-                                        <img src={bannerImg} alt="Dr. Thanmai" />
+                                        <img
+                                            src={bannerImg}
+                                            alt="Dr. Thanmai"
+                                            width="520"
+                                            height="520"
+                                            fetchPriority="high"
+                                            decoding="async"
+                                        />
                                     </div>
                                     <div className='info-box'>
                                         <div className="info-img">
-                                            <img src={doctorImg} alt="doctor" />
+                                            <img src={doctorImg} alt="doctor" width="64" height="64" loading="lazy" decoding="async" />
                                         </div>
                                         <div className='info-text'>
                                             <p>Dr. Thanmai</p>
@@ -77,10 +84,10 @@ const Banner = () => {
 
                                     {/* Vector Shapes */}
                                     <div className="shapes">
-                                        <img src={shapeOne} alt="shape" />
-                                        <img src={shapeTwo} alt="shape" />
-                                        <img src={shapeThree} alt="shape" />
-                                        <img src={shapeFour} alt="shape" />
+                                        <img src={shapeOne} alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                                        <img src={shapeTwo} alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                                        <img src={shapeThree} alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                                        <img src={shapeFour} alt="" aria-hidden="true" loading="lazy" decoding="async" />
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +97,7 @@ const Banner = () => {
             </div>
 
             {/* Banner Pattern Vector*/}
-            <img className='banner-pattern' src={bannerPattern} alt="banner pattern" />
+            <img className='banner-pattern' src={bannerPattern} alt="" aria-hidden="true" loading="lazy" decoding="async" />
         </section>
     );
 };

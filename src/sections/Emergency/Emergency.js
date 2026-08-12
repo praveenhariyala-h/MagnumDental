@@ -1,17 +1,17 @@
 import React from 'react';
 import './Emergency.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import EmergencyImg from '../../assets/emergency.png';
+import EmergencyImg from '../../assets/emergency.webp';
 import { Link } from 'react-router-dom';
 
 const Emergency = () => {
     return (
-        <section className='emergency-section' data-aos="fade-up" data-aos-duration="2000">
+        <section className='emergency-section' data-aos="fade-up" data-aos-duration="800">
             <div className="container-fluid">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-6">
                         <div className="emergency-img">
-                            <img src={EmergencyImg} alt="Emergency" />
+                            <img src={EmergencyImg} alt="Emergency" loading="lazy" decoding="async" />
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6">

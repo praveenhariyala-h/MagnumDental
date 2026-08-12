@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import Navbar from '../components/Navbar/Navbar';
-import Footer from '../sections/Footer/Footer';
-import Gallery from '../sections/Gallery/Gallery';
 import ServiceBanner from '../sections/ServiceBanner/ServiceBanner';
-import Symptoms from '../sections/Symptoms/Symptoms';
-import Appointment from '../sections/Appointment/Appointment';
+import AosRefresh from '../components/AosRefresh/AosRefresh';
+
+const Symptoms = lazy(() => import('../sections/Symptoms/Symptoms'));
+const Gallery = lazy(() => import('../sections/Gallery/Gallery'));
+const Appointment = lazy(() => import('../sections/Appointment/Appointment'));
+const Footer = lazy(() => import('../sections/Footer/Footer'));
 
 const Services = () => {
     return (
         <>
             <Navbar />
             <ServiceBanner />
-            <Symptoms />
-            <Gallery />
-            <Appointment />
-            <Footer />
+            <Suspense fallback={null}>
+                <AosRefresh />
+                <Symptoms />
+                <Gallery />
+                <Appointment />
+                <Footer />
+            </Suspense>
         </>
     );
 };

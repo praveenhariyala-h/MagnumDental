@@ -15,7 +15,7 @@ const Contactus = () => {
                     description="Reach Magnum Dental Opus in Sheela Nagar, Visakhapatnam. Call or WhatsApp 9100291726, or email magnumdentalopus@gmail.com."
                 />
             </section>
-            <section className='contact-form-area' data-aos="fade-up" data-aos-duration="2000">
+            <section className='contact-form-area' data-aos="fade-up" data-aos-duration="800">
                 <ContactForm />
             </section>
             <Footer />

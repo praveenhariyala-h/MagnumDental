@@ -57,7 +57,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-6 col-md-5">
                         <div className="footer-logo">
-                            <img src={logo} alt="logo" />
+                            <img src={logo} alt="logo" loading="lazy" decoding="async" />
                         </div>
                         <p>Magnum Dental Opus is a trusted dental clinic in Sheela Nagar, Visakhapatnam, offering cosmetic, preventive, and restorative care for the whole family.</p>
 
